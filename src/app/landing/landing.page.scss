@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Poppins;
 }
 
 .header {
@@ -16,8 +19,38 @@
   width: 37px;
 }
 .header > div {
+  display: flex;
+  flex-direction: column;
+
   color: white;
 }
 .header > div > span {
-  font-size: 13px;
+  margin-top: -5px;
+  font-size: 12px;
+}
+.main-con {
+  background-image: url("/assets/icon/kist.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 565px;
+}
+.navbar {
+  height: 61px;
+  background-color: #9c0d20;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.navbar > div {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar > div > img {
+  height: 20px;
+  width: 20px;
 }
