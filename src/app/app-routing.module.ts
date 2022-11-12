@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'landing',
     loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
   },
+  {
+    path: 'alumni-tab',
+    loadChildren: () => import('./alumni-tab/alumni-tab.module').then( m => m.AlumniTabPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 5px 0px 0px 20px;
+  height: 55px;
+  display: flex;
+  gap: 7px;
+  background-color: #9c0d20;
+  align-items: center;
+}
+.header > img {
+  height: 35px;
+  width: 37px;
+}
+.header > div {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
+.header > div > span {
+  margin-top: -5px;
+  font-size: 12px;
+}
