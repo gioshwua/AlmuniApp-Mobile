@@ -1,1 +1,1 @@
-Mobile App using Ionic
+Mobile ALumni App using Ionic
