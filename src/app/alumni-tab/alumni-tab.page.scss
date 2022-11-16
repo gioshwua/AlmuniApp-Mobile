@@ -8,6 +8,7 @@
 
 .main-con {
   height: 565px;
+  background-color: white;
 }
 .width {
   display: flex;
@@ -16,6 +17,7 @@
 .content > .searchBar > h3 {
   font-size: 17px;
   font-weight: bolder;
+  color: black;
 }
 .content {
   padding-top: 10px;
@@ -33,11 +35,15 @@
   width: 15px;
 }
 .find > div > input {
+  border-color: black;
   border-width: 1px;
   border-radius: 6px;
-  width: 80px;
+  width: 90px;
   height: 18px;
   padding-right: 30px;
+  background-color: white;
+  font-size: 10px;
+  color: black;
 }
 .find > div {
   display: flex;
@@ -45,9 +51,9 @@
   align-items: center;
 }
 .find > div > button > img {
-  margin-top: -9px;
-
-  height: 18px;
+  margin-top: -10px;
+  width: 25px;
+  height: 20px;
   position: absolute;
   right: 0;
 }

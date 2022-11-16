@@ -6,28 +6,6 @@
   font-family: Poppins;
 }
 
-.header {
-  padding: 5px 0px 0px 20px;
-  height: 55px;
-  display: flex;
-  gap: 7px;
-  background-color: #9c0d20;
-  align-items: center;
-}
-.header > img {
-  height: 35px;
-  width: 37px;
-}
-.header > div {
-  display: flex;
-  flex-direction: column;
-
-  color: white;
-}
-.header > div > span {
-  margin-top: -5px;
-  font-size: 12px;
-}
 .main-con {
   background-image: url("/assets/icon/kist.jpg");
   background-repeat: no-repeat;
@@ -35,23 +13,25 @@
   background-size: cover;
   height: 565px;
 }
-.navbar {
-  height: 61px;
-  background-color: #9c0d20;
+.content {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
+  justify-content: space-between;
 }
-.navbar > div {
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.news {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 460px;
+  border: 0px solid;
+  height: 90px;
+  width: 140px;
+  background-color: #e1e1e1;
 }
-.navbar > div > img {
-  padding-top: 5px;
-  height: 30px;
-  width: 26px;
+.events {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 460px;
+  border: 0px solid;
+  height: 90px;
+  width: 140px;
+  background-color: #e1e1e1;
 }
