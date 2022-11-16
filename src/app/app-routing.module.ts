@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'alumni-tab',
     loadChildren: () => import('./alumni-tab/alumni-tab.module').then( m => m.AlumniTabPageModule)
   },
+  {
+    path: 'news',
+    loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
+  },
+  {
+    path: 'events',
+    loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
+  },
 ];
 
 @NgModule({

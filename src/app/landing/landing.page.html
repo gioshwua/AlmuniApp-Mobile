@@ -3,8 +3,10 @@
 
   <div class="main-con">
     <div class="content">
-      <div class="news"><img src="assets/icon/alumni/news.png" />News</div>
-      <div class="events">
+      <div class="news" [routerLink]="['/news']">
+        <img src="assets/icon/alumni/news.png" />News
+      </div>
+      <div class="events" [routerLink]="['/events']">
         <img src="assets/icon/alumni/events.png" />Events
       </div>
     </div>
