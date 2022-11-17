@@ -11,6 +11,7 @@
 .infos > div {
   font-size: 10px;
   display: flex;
+  height: 150px;
 
   align-items: center;
   background-color: #d9d9d9;
@@ -23,7 +24,7 @@
 }
 .personalinfo {
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 13px;
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
@@ -33,7 +34,7 @@
   line-height: 1rem;
 }
 .website > img {
-  margin-top: -5px;
+  margin-top: -10px;
   height: 30px;
   width: 110px;
   border-radius: 10px;
