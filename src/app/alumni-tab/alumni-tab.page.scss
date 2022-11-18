@@ -15,7 +15,7 @@
   justify-content: center;
 }
 .content > .searchBar > h3 {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bolder;
   color: black;
 }
@@ -57,14 +57,28 @@
   position: absolute;
   right: 0;
 }
-.nexprev {
-  margin-top: 14px;
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
+
+.con {
+  margin-top: 12px;
 }
-.nexprev > h4 {
-  font-size: 12px;
-  color: #9c0d20;
+.infos {
+  align-items: center;
+  display: flex;
+
+  background-color: #d9d9d9;
+  height: 150px;
+}
+
+.infos > div > p {
+  font-size: 10px;
+  font-weight: bold;
+}
+.infos > .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 85px;
+  height: 120px;
+  background-color: white;
 }

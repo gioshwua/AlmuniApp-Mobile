@@ -18,17 +18,33 @@
         </div>
       </div>
     </div>
-    <div class="width">
-      <div class="nexprev">
-        <h4>< Previous</h4>
-        <h4>Next ></h4>
-      </div>
-    </div>
-    <div class="info">
-      <app-alumni-info></app-alumni-info>
-      <app-alumni-info></app-alumni-info>
-      <app-alumni-info></app-alumni-info>
-    </div>
+
+    <ion-list>
+      <ion-item *ngFor="let item of lists">
+        <ion-label>
+          <div class="con">
+            <div class="infos">
+              <div class="pic">{{item?.image}}</div>
+              <div>
+                <p>NAME: {{item?.name}}</p>
+                <p>ADDRESS: {{item?.address}}</p>
+                <p>DEPARTMENT: {{item?.department}}</p>
+                <p>COURSE: {{item?.course}}</p>
+                <p>EMPLOYMENT STATUS: {{item?.stat}}</p>
+              </div>
+            </div>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="circles"
+        loadingText="Loading more data..."
+      >
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </div>
-  <app-nav-bar></app-nav-bar>
 </ion-content>
+<app-nav-bar></app-nav-bar>
