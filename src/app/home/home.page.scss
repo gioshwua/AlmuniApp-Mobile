@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Staatliches;
 }
 .main-con {
   background-image: url("/assets/icon/kist.jpg");
@@ -31,12 +30,63 @@
   height: 175px;
 }
 .login {
+  font-family: Staatliches;
   margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.login > .logincon {
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 10px;
+}
+.logincon > .label > label {
+  margin: 5px;
 }
 .login > h3 {
   color: white;
   font-weight: bold;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.label > ion-item > ion-label > img {
+  height: 22px;
+  width: 22px;
+}
+ion-item {
+  width: 250px;
+  border-radius: 10px;
+}
+.logincon > .buttons > ion-button {
+  width: 230px;
+  margin-top: 10px;
+  --background: #d0112b;
+  --background-hover: #b02336;
+  --background-activated: #9c0d20;
+}
+.buttons {
+  gap: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons > .signup > p {
+  font-size: 13px;
+}
+.buttons > .signup > ion-button {
+  color: #9c0d20;
+  width: 230px;
+  --background: #f5f5f5;
+  --background-hover: #ffffff;
+  --background-activated: #cfcecf;
 }
