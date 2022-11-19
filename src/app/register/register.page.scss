@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-con {
+  background-image: url("/assets/icon/kist.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 565px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  height: 700px;
+  background-color: #9c0d20;
+}
+.header {
+  position: relative;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo > img {
+  position: absolute;
+  margin-top: -110px;
+  height: 175px;
+}
+.register {
+  font-family: Staatliches;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.registercon {
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 2px;
+  margin-top: -10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.label > ion-item > ion-label > img {
+  height: 22px;
+  width: 22px;
+}
+ion-item {
+  width: 250px;
+  border-radius: 10px;
+}
+.logincon > .buttons > ion-button {
+  width: 230px;
+  margin-top: 10px;
+  --background: #d0112b;
+  --background-hover: #b02336;
+  --background-activated: #9c0d20;
+}
+.buttons {
+  gap: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttons > .signup > p {
+  font-size: 13px;
+}
+.buttons > .signup > ion-button {
+  color: #9c0d20;
+  width: 230px;
+  --background: #f5f5f5;
+  --background-hover: #ffffff;
+  --background-activated: #cfcecf;
+}
+.label > ion-item > ion-input {
+  font-size: 13px;
+  height: 10px;
+}
+.signup > ion-button {
+  margin-top: 20px;
+  color: #9c0d20;
+  width: 200px;
+  --background: #f5f5f5;
+  --background-hover: #f0dede;
+  --background-activated: #cfcecf;
+}
