@@ -1,12 +1,10 @@
-.maincon {
-  width: 100vw;
-  height: 400px;
+.main-con {
+  background-image: url("/assets/icon/kist.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 565px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#container {
-  height: 200px;
-  width: 200px;
 }

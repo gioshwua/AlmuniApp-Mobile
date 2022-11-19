@@ -1,20 +1,7 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Blank </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div class="maincon">
-    <div id="container">
-      <ion-datetime></ion-datetime>
-      <ion-button [routerLink]="['/landing']">Landing page</ion-button>
-    </div>
+<app-header></app-header>
+<ion-content>
+  <div class="main-con">
+    <ion-button [routerLink]="['/landing']">Landing page</ion-button>
   </div>
 </ion-content>
+<app-nav-bar></app-nav-bar>

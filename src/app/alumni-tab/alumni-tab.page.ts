@@ -92,6 +92,7 @@ export class AlumniTabPage implements OnInit {
     },
     {
       id: 10,
+      image: 'pic',
       name: 'Joshua Reano',
       address: 'dummy address',
       department: '12344556',
