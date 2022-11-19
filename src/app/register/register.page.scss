@@ -39,6 +39,7 @@
   color: white;
 }
 .registercon {
+  color: white;
   font-family: Poppins;
   display: flex;
   justify-content: center;
@@ -52,10 +53,11 @@
 .label {
   display: flex;
   flex-direction: column;
+  font-family: Poppins;
 }
 .label > ion-item > ion-label > img {
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
 }
 ion-item {
   width: 250px;
@@ -91,7 +93,8 @@ ion-item {
 .signup > ion-button {
   margin-top: 20px;
   color: #9c0d20;
-  width: 200px;
+  width: 150px;
+  height: 30px;
   --background: #f5f5f5;
   --background-hover: #f0dede;
   --background-activated: #cfcecf;
