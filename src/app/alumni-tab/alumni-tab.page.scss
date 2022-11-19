@@ -9,10 +9,14 @@
 .main-con {
   height: 565px;
   background-color: white;
+  margin-left: -10px;
 }
 .width {
   display: flex;
   justify-content: center;
+}
+.searchBar {
+  margin-left: 10px;
 }
 .content > .searchBar > h3 {
   font-size: 16px;
