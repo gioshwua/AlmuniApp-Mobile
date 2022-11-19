@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlumniTabPage implements OnInit {
   page = 0;
-  perPage = 10;
+  perPage = 5;
   array: any[] = [
     {
       id: 1,

@@ -20,7 +20,7 @@
     </div>
 
     <ion-list>
-      <ion-item *ngFor="let item of lists">
+      <div class="alumnis" *ngFor="let item of lists">
         <ion-label>
           <div class="con">
             <div class="infos">
@@ -35,12 +35,12 @@
             </div>
           </div>
         </ion-label>
-      </ion-item>
+      </div>
     </ion-list>
 
     <ion-infinite-scroll (ionInfinite)="loadMore($event)">
       <ion-infinite-scroll-content
-        loadingSpinner="circles"
+        loadingSpinner="bubbles"
         loadingText="Loading more data..."
       >
       </ion-infinite-scroll-content>
