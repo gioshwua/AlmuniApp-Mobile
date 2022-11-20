@@ -1,35 +1,37 @@
-<div class="content">
-  <div class="header">
-    <div class="head"><img src="assets/login/bsu.png" /></div>
-    <div class="logo"><img src="assets/login/logo.png" /></div>
-  </div>
+<ion-content>
+  <div class="content">
+    <div class="header">
+      <div class="head"><img src="assets/login/bsu.png" /></div>
+      <div class="logo"><img src="assets/login/logo.png" /></div>
+    </div>
 
-  <div class="login">
-    <h3>LOG IN</h3>
-    <br />
-    <div class="logincon">
-      <div class="label">
-        <label> USERNAME</label>
-        <ion-item>
-          <ion-input value="Kenneth Joshua Reano"></ion-input>
-          <ion-label><img src="assets/icon/login/login.png" /></ion-label>
-        </ion-item>
-      </div>
+    <div class="login">
+      <h3>LOG IN</h3>
+      <br />
+      <div class="logincon">
+        <div class="label">
+          <label> USERNAME</label>
+          <ion-item>
+            <ion-input placeholder="Kenneth Joshua Reano"></ion-input>
+            <ion-label><img src="assets/icon/login/login.png" /></ion-label>
+          </ion-item>
+        </div>
 
-      <div class="label">
-        <label>PASSWORD</label>
-        <ion-item>
-          <ion-input type="password" value="Password Here"></ion-input>
-          <ion-label><img src="assets/icon/login/password.png" /></ion-label>
-        </ion-item>
-      </div>
-      <div class="buttons">
-        <ion-button [routerLink]="['/landing']">LOGIN</ion-button>
-        <div class="signup">
-          <p>Don't have an account?</p>
-          <ion-button [routerLink]="['/register']">SIGN UP</ion-button>
+        <div class="label">
+          <label>PASSWORD</label>
+          <ion-item>
+            <ion-input type="password"></ion-input>
+            <ion-label><img src="assets/icon/login/password.png" /></ion-label>
+          </ion-item>
+        </div>
+        <div class="buttons">
+          <ion-button [routerLink]="['/landing']">LOGIN</ion-button>
+          <div class="signup">
+            <p>Don't have an account?</p>
+            <ion-button [routerLink]="['/register']">SIGN UP</ion-button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</ion-content>

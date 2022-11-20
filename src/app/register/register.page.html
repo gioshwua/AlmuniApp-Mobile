@@ -1,62 +1,55 @@
-<div class="content">
-  <div class="header">
-    <div class="head"><img src="assets/login/bsu.png" /></div>
-    <div class="logo"><img src="assets/login/logo.png" /></div>
-  </div>
-  <div class="register">
-    <h3>REGISTER</h3>
-    <br />
-
-    <div class="label">
-      <label> EMAIL</label>
-      <ion-item>
-        <ion-input
-          type="email"
-          ngModel
-          email
-          value="20-06113@g.batstate-u.edu.ph"
-        ></ion-input>
-        <ion-label><img src="assets/icon/login/login.png" /></ion-label>
-      </ion-item>
+<ion-content>
+  <div class="content">
+    <div class="header">
+      <div class="head"><img src="assets/login/bsu.png" /></div>
+      <div class="logo"><img src="assets/login/logo.png" /></div>
     </div>
-    <div class="label">
-      <label>USERNAME</label>
-      <ion-item>
-        <ion-input
-          type="name"
-          ngModel
-          name
-          value="TRISTAN WONDERER"
-        ></ion-input>
-        <ion-label><img src="assets/icon/login/email.png" /></ion-label>
-      </ion-item>
-    </div>
-    <div class="label">
-      <label>PASSWORD</label>
-      <ion-item>
-        <ion-input
-          type="password"
-          ngModel
-          password
-          value="Password Here"
-        ></ion-input>
-        <ion-label><img src="assets/icon/login/password.png" /></ion-label>
-      </ion-item>
-    </div>
-    <div class="label">
-      <label> CONFIRM PASSWORD</label>
-      <ion-item>
-        <ion-input
-          type="password"
-          ngModel
-          password
-          value="Password Here"
-        ></ion-input>
-        <ion-label><img src="assets/icon/login/password.png" /></ion-label>
-      </ion-item>
-    </div>
-    <div class="signup">
-      <ion-button [routerLink]="['/register1']">REGISTER</ion-button>
+    <div class="register">
+      <h3>REGISTER</h3>
+      <br />
+      <div class="registercon">
+        <div class="label">
+          <label> EMAIL</label>
+          <ion-item>
+            <ion-input
+              type="email"
+              ngModel
+              email
+              placeholder="20-06113@g.batstate-u.edu.ph"
+            ></ion-input>
+            <ion-label><img src="assets/icon/login/login.png" /></ion-label>
+          </ion-item>
+        </div>
+        <div class="label">
+          <label>USERNAME</label>
+          <ion-item>
+            <ion-input
+              type="name"
+              ngModel
+              name
+              placeholder="TRISTAN WONDERER"
+            ></ion-input>
+            <ion-label><img src="assets/icon/login/email.png" /></ion-label>
+          </ion-item>
+        </div>
+        <div class="label">
+          <label>PASSWORD</label>
+          <ion-item>
+            <ion-input type="password" ngModel password></ion-input>
+            <ion-label><img src="assets/icon/login/password.png" /></ion-label>
+          </ion-item>
+        </div>
+        <div class="label">
+          <label> CONFIRM PASSWORD</label>
+          <ion-item>
+            <ion-input type="password" ngModel password></ion-input>
+            <ion-label><img src="assets/icon/login/password.png" /></ion-label>
+          </ion-item>
+        </div>
+        <div class="signup">
+          <ion-button [routerLink]="['/register1']">REGISTER</ion-button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</ion-content>

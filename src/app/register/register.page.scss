@@ -59,16 +59,12 @@
   height: 20px;
   width: 20px;
 }
-ion-item {
+.label > ion-item {
   width: 250px;
   border-radius: 10px;
 }
-.logincon > .buttons > ion-button {
-  width: 230px;
-  margin-top: 10px;
-  --background: #d0112b;
-  --background-hover: #b02336;
-  --background-activated: #9c0d20;
+.registercon {
+  margin-top: -15px;
 }
 .buttons {
   gap: 14px;
@@ -79,13 +75,7 @@ ion-item {
 .buttons > .signup > p {
   font-size: 13px;
 }
-.buttons > .signup > ion-button {
-  color: #9c0d20;
-  width: 230px;
-  --background: #f5f5f5;
-  --background-hover: #ffffff;
-  --background-activated: #cfcecf;
-}
+
 .label > ion-item > ion-input {
   font-size: 13px;
   height: 10px;
@@ -93,8 +83,8 @@ ion-item {
 .signup > ion-button {
   margin-top: 20px;
   color: #9c0d20;
-  width: 150px;
-  height: 30px;
+  width: 200px;
+  height: 45px;
   --background: #f5f5f5;
   --background-hover: #f0dede;
   --background-activated: #cfcecf;
