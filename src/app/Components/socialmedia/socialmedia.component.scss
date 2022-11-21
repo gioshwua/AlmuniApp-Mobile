@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.socials > img {
+  filter: invert(100%);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+}
+.socials {
+  height: 100vh;
+
+  display: flex;
+  gap: 10px;
+}
