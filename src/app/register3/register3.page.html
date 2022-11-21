@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register3</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="content">
+    <div class="header">
+      <div class="head"><img src="assets/login/bsu.png" /></div>
+      <div class="logo"><img src="assets/login/logo.png" /></div>
+    </div>
 
+    <div class="Work">
+      <h3>EDUCATION HISTORY</h3>
+      <div class="con">
+        <p>
+          What was your position regarding<br />
+          employment in the 12 months after you <br />
+          graduated (including permanent, contract, <br />
+          casual and self-employment)?
+        </p>
+        <div class="radio">
+          <p>
+            Please select the response which <br />
+            BEST DESCRIBES your position:
+          </p>
+
+          <ion-list>
+            <ion-radio-group [allowEmptySelection]="true" value="turtles">
+              <ion-item>
+                <ion-label
+                  >in full time work <br />
+                  (i.e. working 35 hours <br />a week or more)
+                </ion-label>
+                <ion-radio slot="start" value="Undergrad"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label
+                  >in part-time work <br />
+                  (i.e. working fewer than<br />
+                  35 hours a week) )</ion-label
+                >
+                <ion-radio slot="start" value="Master"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>unemployed but <br />seeking employment</ion-label>
+                <ion-radio slot="start" value="PHD"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label
+                  >not available for work for reasons<br />
+                  such as ill health, military <br />service, travel, further
+                  study, etc.</ion-label
+                >
+                <ion-radio slot="start" value="MBA"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+        </div>
+      </div>
+    </div>
+    <div class="register">
+      <p>Register 3 of 3</p>
+      <div>
+        <div [routerLink]="['/register2']">< Back</div>
+        <div [routerLink]="['/landing']">Next ></div>
+      </div>
+    </div>
+  </div>
 </ion-content>

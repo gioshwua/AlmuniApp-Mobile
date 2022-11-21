@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-con {
+  background-image: url("/assets/icon/kist.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  height: 1000px;
+  background-color: #9c0d20;
+}
+.header {
+  position: relative;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo > img {
+  position: absolute;
+  margin-top: -110px;
+  height: 175px;
+}
+.Work {
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+.Work > h3 {
+  font-family: Staatliches;
+}
+.Work > .con {
+  font-family: Poppins;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.con > .radio > ion-list {
+  border-radius: 10px;
+}
+
+.con > .radio > ion-list > ion-radio-group > ion-item > ion-radio {
+  --border-radius: 20px;
+  --inner-border-radius: 4px;
+  --background: #e8bac0;
+  --color: #e8bac0;
+  --color-checked: #ec1515;
+}
+.con > .radio > ion-list > ion-radio-group > ion-item > ion-label {
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 12px;
+}
+.con > .radio > ion-list {
+  width: 260px;
+  margin-top: 10px;
+}
+.con > .radio > ion-list > ion-radio-group > ion-item {
+  --background: #9c0d20e5;
+  color: white;
+}
+.register {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.register > div {
+  gap: 20px;
+  display: flex;
+}
+.register > div > div {
+  padding: 3px;
+  background-color: #b47b83;
+  border-radius: 5px;
+}
