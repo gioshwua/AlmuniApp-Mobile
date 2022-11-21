@@ -77,7 +77,7 @@
 .degree {
   font-family: Poppins;
   font-size: 12px;
-  margin-top: 40px;
+  margin-top: 30px;
   color: white;
   display: flex;
   align-items: center;
@@ -93,4 +93,45 @@
 }
 .degree > label {
   text-align: center;
+}
+.address {
+  font-family: Poppins;
+  font-size: 12px;
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.address > label {
+  text-align: center;
+}
+.address > select {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #b47b83;
+}
+
+.register {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.register > div {
+  gap: 20px;
+  display: flex;
+}
+.register > div > div {
+  padding: 3px;
+  background-color: #b47b83;
+  border-radius: 5px;
 }
