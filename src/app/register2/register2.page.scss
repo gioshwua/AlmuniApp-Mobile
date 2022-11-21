@@ -8,13 +8,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 565px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .content {
-  height: 700px;
+  height: 1000px;
   background-color: #9c0d20;
 }
 .header {
@@ -28,4 +28,69 @@
   position: absolute;
   margin-top: -110px;
   height: 175px;
+}
+.radiobuttons {
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  font-family: Poppins;
+}
+.radiobuttons > h3 {
+  font-family: Staatliches;
+}
+.radiobuttons > .con {
+  font-family: Poppins;
+  margin-top: 10px;
+}
+.radiobuttons > .con > p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+.con > ion-list {
+  border-radius: 10px;
+}
+
+.con > ion-list > ion-radio-group > ion-item > ion-radio {
+  --border-radius: px;
+  --inner-border-radius: 4px;
+  --background: #e8bac0;
+  --color: #e8bac0;
+  --color-checked: #ec1515;
+}
+.con > ion-list > ion-radio-group > ion-item > ion-label {
+  margin-left: 20px;
+  font-size: 12px;
+}
+.con > ion-list {
+  width: 230px;
+  margin-top: 10px;
+}
+.con > ion-list > ion-radio-group > ion-item {
+  --background: #9c0d20e5;
+  color: white;
+}
+.degree {
+  font-family: Poppins;
+  font-size: 12px;
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.degree > ion-item {
+  width: 230px;
+  --border-radius: 10px;
+  --background: #b47b83;
+  width: 150px;
+}
+.degree > label {
+  text-align: center;
 }

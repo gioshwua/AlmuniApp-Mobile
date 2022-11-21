@@ -4,5 +4,64 @@
       <div class="head"><img src="assets/login/bsu.png" /></div>
       <div class="logo"><img src="assets/login/logo.png" /></div>
     </div>
+    <div class="radiobuttons">
+      <h3>EDUCATION HISTORY</h3>
+      <div class="con">
+        <p>
+          What is the most recent degree you <br />completed at the university?
+        </p>
+        <ion-list>
+          <ion-radio-group [allowEmptySelection]="true" value="turtles">
+            <ion-item>
+              <ion-label>Undergraduate Program(s)</ion-label>
+              <ion-radio slot="start" value="Undergrad"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Master Program(S)</ion-label>
+              <ion-radio slot="start" value="Master"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>PhD Program(s)</ion-label>
+              <ion-radio slot="start" value="PHD"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>MBA Program(s)</ion-label>
+              <ion-radio slot="start" value="MBA"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Executive Education</ion-label>
+              <ion-radio slot="start" value="Executive"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Other</ion-label>
+              <ion-radio slot="start" value="Other"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+      </div>
+    </div>
+    <div class="degree">
+      <label>When did you complete your most <br />recent degree?</label>
+      <ion-item>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+    <div class="address">
+      <label>
+        Select the subject area which is nearest <br />
+        to your most recent program/course:</label
+      >
+
+      <select>
+        <option>Bsu Alangilan</option>
+        <option>Bsu Main</option>
+        <option>Mindoro State University</option>
+      </select>
+    </div>
   </div>
 </ion-content>
