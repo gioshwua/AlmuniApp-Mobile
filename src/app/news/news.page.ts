@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.page.scss'],
 })
 export class NewsPage implements OnInit {
+  searchTerm: string;
+  employees = [
+    {
+      name: 'TRISTAN',
+      position: 'STUDENT',
+      department: 'CICS',
+    },
+    {
+      name: 'DIREK MARC',
+      position: 'DIRECTOR',
+      department: 'CICS',
+    },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

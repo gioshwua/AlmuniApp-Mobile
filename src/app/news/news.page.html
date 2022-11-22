@@ -4,6 +4,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <ion-searchbar
+    placeholder='Try "kenneth"'
+    [(ngModel)]="searchTerm"
+    showCancelButton="focus"
+    animated
+  ></ion-searchbar>
+  <ion-list>
+    <div *ngFor="let employee of employees | filter:searchTerm">
+      <p>{{employee.name}}</p>
+      <p>{{employee.position}}</p>
+      <p>{{employee.department}}</p>
+    </div>
+  </ion-list>
 </ion-content>

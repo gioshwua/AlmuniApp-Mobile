@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-con {
+  background-image: url("/assets/icon/kist.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  height: 100vh;
+  background-color: #9c0d20;
+}
+.header {
+  position: relative;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo > img {
+  position: absolute;
+  margin-top: -110px;
+  height: 175px;
+}

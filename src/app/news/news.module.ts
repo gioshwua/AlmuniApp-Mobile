@@ -7,14 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { NewsPageRoutingModule } from './news-routing.module';
 
 import { NewsPage } from './news.page';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NewsPageRoutingModule
+    NewsPageRoutingModule,
+    Ng2SearchPipeModule,
   ],
-  declarations: [NewsPage]
+  declarations: [NewsPage],
 })
 export class NewsPageModule {}
