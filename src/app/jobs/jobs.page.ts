@@ -12,11 +12,12 @@ export class JobsPage implements OnInit {
     {
       id: 1,
       image: 'pic ',
-      name: 'Joshua Reano',
-      address: 'dummy address',
-      department: '12344556',
-      course: 'BSCS',
-      stat: 'TAMBAY',
+      name: 'COMPANY NAME',
+      address: 'LOCATION',
+      department:
+        '(Positions they are hiring e.g Project Manager | IT Consultant | Software Developer)',
+      course: 'College Graduate with degree in IT',
+      stat: 'MESSAGE',
     },
     {
       id: 2,

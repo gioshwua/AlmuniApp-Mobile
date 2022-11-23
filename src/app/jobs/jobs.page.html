@@ -20,40 +20,25 @@
     </div>
 
     <ion-list>
-      <div class="alumnis" *ngFor="let item of lists">
+      <div class="jobs" *ngFor="let item of lists">
         <ion-label>
           <div class="con">
             <div class="infos">
-              <div class="pic">{{item?.image}}</div>
-              <div>
-                <p>NAME: {{item?.name}}</p>
-                <p>ADDRESS: {{item?.address}}</p>
-                <p>DEPARTMENT: {{item?.department}}</p>
-                <p>COURSE: {{item?.course}}</p>
-
-                <div class="socials">
-                  <img
-                    onclick="window.open('https://www.facebook.com', '_system', 'location-yes');return false;"
-                    src="assets/icon/socials/fb.svg"
-                  />
-                  <img
-                    onclick="window.open('https://twitter.com/', '_system', 'location-yes');return false;"
-                    src="assets/icon/socials/twitter.svg"
-                  />
-
-                  <img
-                    onclick="window.open('https://www.linkedin.com/', '_system', 'location-yes');return false;"
-                    src="assets/icon/socials/linkedin.svg"
-                  />
-                  <img
-                    onclick="window.open('https://www.instagram.com/', '_system', 'location-yes');return false;"
-                    src="assets/icon/socials/ig.svg"
-                  />
-
-                  <img
-                    onclick="window.open('https://www.youtube.com/', '_system', 'location-yes');return false;"
-                    src="assets/icon/socials/yt.svg"
-                  />
+              <div class="company">
+                <div class="pic">{{item?.image}}</div>
+                <div class="nameloc">
+                  <p>{{item?.name}}</p>
+                  <span> <p>{{item?.address}}</p></span>
+                </div>
+              </div>
+              <div class="quali">
+                <p>{{item?.department}}</p>
+                <p>Qualifications: {{item?.course}}</p>
+              </div>
+              <div class="message">
+                <div class="messcon">
+                  <img src="assets/icon/jobs/message.png" />
+                  <p>{{item?.stat}}</p>
                 </div>
               </div>
             </div>
