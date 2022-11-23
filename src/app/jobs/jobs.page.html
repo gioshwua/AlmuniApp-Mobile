@@ -4,7 +4,9 @@
     <div class="width">
       <div class="content">
         <div class="searchBar">
-          <h3>Batch 2022-2023</h3>
+          <img src="assets/icon/jobs/sort1.png" />
+          <p>Sort</p>
+          <img src="assets/icon/jobs/sort2.png" />
         </div>
 
         <div class="find">
@@ -27,18 +29,18 @@
               <div class="company">
                 <div class="pic">{{item?.image}}</div>
                 <div class="nameloc">
-                  <p>{{item?.name}}</p>
-                  <span> <p>{{item?.address}}</p></span>
+                  <p>{{item?.company}}</p>
+                  <span> <p>{{item?.comloc}}</p></span>
                 </div>
               </div>
               <div class="quali">
-                <p>{{item?.department}}</p>
-                <p>Qualifications: {{item?.course}}</p>
+                <p>{{item?.positions}}</p>
+                <p>Qualifications: {{item?.quali}}</p>
               </div>
-              <div class="message">
+              <div class="message" [routerLink]="['/sendmail']">
                 <div class="messcon">
                   <img src="assets/icon/jobs/message.png" />
-                  <p>{{item?.stat}}</p>
+                  <p>Message</p>
                 </div>
               </div>
             </div>

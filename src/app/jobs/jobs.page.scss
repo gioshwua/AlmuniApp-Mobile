@@ -14,12 +14,18 @@
 .width {
   display: flex;
   justify-content: center;
+  gap: 3px;
 }
-
-.content > .searchBar > h3 {
-  font-size: 16px;
-  font-weight: bolder;
-  color: black;
+.content > .searchBar {
+  display: flex;
+  align-items: center;
+}
+.content > .searchBar > img {
+  height: 10px;
+  width: 10px;
+}
+.content > .searchBar > p {
+  font-size: 10px;
 }
 .content {
   padding-top: 13px;
@@ -68,7 +74,7 @@
   margin-top: 12px;
   background-color: #d9d9d9;
   display: flex;
-  width: 270px;
+  width: 280px;
   justify-content: center;
 }
 .infos > div > p {
@@ -116,6 +122,7 @@
   align-items: center;
   border-radius: 5px;
   padding: 3px;
+  gap: 2px;
 }
 .con > .infos > .message > .messcon > p {
   font-size: 9px;

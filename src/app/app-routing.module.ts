@@ -60,6 +60,10 @@ const routes: Routes = [
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
+  {
+    path: 'sendmail',
+    loadChildren: () => import('./sendmail/sendmail.module').then( m => m.SendmailPageModule)
+  },
 ];
 
 @NgModule({

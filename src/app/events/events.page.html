@@ -1,17 +1,8 @@
-<ion-content
-  ><div style="width: 100%">
-    <div
-      style="height: 0; padding-bottom: 56.25%; position: relative; width: 100%"
-    >
-      <iframe
-        allowfullscreen=""
-        frameborder="0"
-        height="100%"
-        src="https://giphy.com/embed/sKK4vdGCLQxFE3o6Qz/video"
-        style="left: 0; position: absolute; top: 0"
-        width="100%"
-      ></iframe>
-    </div>
-  </div>
-  <h3>UNDER CONSTRUCTION!!</h3>
+<ion-content>
+  <ion-button id="click-trigger">Left-Click Me</ion-button>
+  <ion-popover trigger="click-trigger" triggerAction="click">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
 </ion-content>
