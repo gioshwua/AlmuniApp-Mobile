@@ -1,8 +1,74 @@
 <ion-content>
-  <div class="content">
-    <div class="header">
-      <div class="head"><img src="assets/login/bsu.png" /></div>
-      <div class="logo"><img src="assets/login/logo.png" /></div>
+  <app-header></app-header>
+  <div class="main-con">
+    <div class="width">
+      <div class="content">
+        <div class="searchBar">
+          <h3>Batch 2022-2023</h3>
+        </div>
+
+        <div class="find">
+          <img src="assets/icon/alumni/filter.png" />
+          <div>
+            <input type="text" />
+            <button type="submit">
+              <img src="assets/icon/alumni/serts.png" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <ion-list>
+      <div class="alumnis" *ngFor="let item of lists">
+        <ion-label>
+          <div class="con">
+            <div class="infos">
+              <div class="pic">{{item?.image}}</div>
+              <div>
+                <p>NAME: {{item?.name}}</p>
+                <p>ADDRESS: {{item?.address}}</p>
+                <p>DEPARTMENT: {{item?.department}}</p>
+                <p>COURSE: {{item?.course}}</p>
+
+                <div class="socials">
+                  <img
+                    onclick="window.open('https://www.facebook.com', '_system', 'location-yes');return false;"
+                    src="assets/icon/socials/fb.svg"
+                  />
+                  <img
+                    onclick="window.open('https://twitter.com/', '_system', 'location-yes');return false;"
+                    src="assets/icon/socials/twitter.svg"
+                  />
+
+                  <img
+                    onclick="window.open('https://www.linkedin.com/', '_system', 'location-yes');return false;"
+                    src="assets/icon/socials/linkedin.svg"
+                  />
+                  <img
+                    onclick="window.open('https://www.instagram.com/', '_system', 'location-yes');return false;"
+                    src="assets/icon/socials/ig.svg"
+                  />
+
+                  <img
+                    onclick="window.open('https://www.youtube.com/', '_system', 'location-yes');return false;"
+                    src="assets/icon/socials/yt.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-label>
+      </div>
+    </ion-list>
+
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data..."
+      >
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </div>
 </ion-content>
+<app-nav-bar></app-nav-bar>
