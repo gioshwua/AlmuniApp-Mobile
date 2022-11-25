@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding: 5px 0px 0px 20px;
+  height: 55px;
+  display: flex;
+  gap: 7px;
+  background-color: #9c0d20;
+  align-items: center;
+}
+.header > img {
+  height: 35px;
+  width: 37px;
+}
+.header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: white;
+  font-family: Staatliches;
+  font-size: 20px;
+}
+
+.main {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.comadd {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 12px;
+}
+.comadd > div > input {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 300px;
+  font-size: 12px;
+}
+.comadd > div {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.jobcon {
+  font-size: 12px;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jobcon > .title > input {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 300px;
+  padding: 3px;
+}
+.jobcon > div {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.jobcontent > textarea {
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px;
+  width: 290px;
+  display: flex;
+}
+.main > .button > .message {
+  display: flex;
+  justify-content: flex-end;
+}
+.main > .button > .message > .messcon {
+  background-color: #9c0d20;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 2px;
+  width: 90px;
+  justify-content: center;
+}
+.main > .button > .message > .messcon > p {
+  font-size: 9px;
+  color: white;
+  border-radius: 5px;
+}
+
+.main > .button > .message {
+  margin-top: 40px;
+}
+.button {
+  display: flex;
+  gap: 50px;
+}
+.main > .button > .message > .post {
+  background-color: #1b9c0d;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 2px;
+  width: 90px;
+  justify-content: center;
+}
+.main > .button > .message > .post > p {
+  font-size: 9px;
+  color: white;
+  border-radius: 5px;
+}

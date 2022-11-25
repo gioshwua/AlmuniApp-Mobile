@@ -1,3 +1,49 @@
-<ion-content>
-  <h3>ALL WILL BE <br />ALRIGHT IN TIME</h3>
+<!--HEADER LANG ITO-->
+<ion-content
+  ><div class="header">
+    <img src="assets/icon/BSU-LOGO.png" />
+    <div>JOB SHEET</div>
+  </div>
+  <div class="main">
+    <div class="comadd">
+      <!--COMPANY-->
+      <div>
+        <label>Company: </label>
+        <input placeholder="Eg. Accenture" />
+      </div>
+
+      <!--ADDRESS-->
+      <div>
+        <label>Address: </label>
+        <input placeholder="Eg. Kumintang Ibaba Batangas City" />
+      </div>
+    </div>
+    <!--JOB TITLE DITO-->
+    <div class="jobcon">
+      <div class="title">
+        <input placeholder="JOB HEADER TITLE" />
+      </div>
+
+      <!--ITO YONG JOB MESSAGE-->
+      <div class="jobcontent">
+        <textarea name="message" rows="5" cols="20">
+Job contents - in MarkDown </textarea
+        >
+      </div>
+    </div>
+
+    <!--BUTTONS FOR POST OR CANCEL!!-->
+    <div class="button">
+      <div class="message" [routerLink]="['/jobs']">
+        <div class="messcon">
+          <p>CANCEL</p>
+        </div>
+      </div>
+      <div class="message" [routerLink]="['/sendmail']">
+        <div class="post">
+          <p>POST JOB</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
