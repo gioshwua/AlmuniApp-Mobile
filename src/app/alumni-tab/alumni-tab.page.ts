@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestlibService } from '../Services/requestlib.service';
 
 @Component({
   selector: 'app-alumni-tab',
@@ -102,7 +103,7 @@ export class AlumniTabPage implements OnInit {
   ];
   lists: any[] = [];
 
-  constructor() {}
+  constructor(private requestlib: RequestlibService) { }
 
   ngOnInit(): void {
     this.lists = this.paginateArray();
