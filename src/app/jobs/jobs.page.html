@@ -58,4 +58,18 @@
     </ion-infinite-scroll>
   </div>
 </ion-content>
-<app-nav-bar></app-nav-bar>
+<div class="navbar">
+  <div class="home" [routerLink]="['/landing']">
+    <img src="assets/icon/navbar/home.png" />Home
+  </div>
+
+  <div class="jobs" [routerLink]="['/jobs']">
+    <img src="assets/icon/navbar/jobs.png" />Jobs
+  </div>
+  <div class="alumni" [routerLink]="['/alumni-tab']">
+    <img src="assets/icon/navbar/alumni.png" />Alumni
+  </div>
+  <div class="profile" [routerLink]="['/profile']">
+    <img src="assets/icon/navbar/profile.png" />Profile
+  </div>
+</div>
