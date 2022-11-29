@@ -108,7 +108,7 @@
   color: white;
 }
 .navbar > div {
-  font-size: 13 px;
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,4 +119,10 @@
   height: 30px;
   width: 26px;
   filter: invert(10%);
+}
+.navbar > div > img {
+  filter: opacity(60%);
+}
+.navbar > .alumni > img {
+  filter: opacity(100%);
 }

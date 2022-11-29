@@ -1,6 +1,35 @@
-h3 {
-  height: 400px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+.navbar {
+  height: 61px;
+  background-color: #9c0d20;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.navbar > div {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.navbar > div > img {
+  padding-top: 5px;
+  height: 30px;
+  width: 26px;
+  filter: invert(10%);
+}
+.navbar > div > img {
+  filter: opacity(60%);
+}
+.navbar > .profile > img {
+  filter: opacity(100%);
 }

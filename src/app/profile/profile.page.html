@@ -1,22 +1,16 @@
-<ion-content>
-  <div style="width: 100%">
-    <div
-      style="
-        height: 0;
-        padding-bottom: 68.96551724137932%;
-        position: relative;
-        width: 100%;
-      "
-    >
-      <iframe
-        allowfullscreen=""
-        frameborder="0"
-        height="100%"
-        src="https://giphy.com/embed/poOsWEQNzdORIiJ8NH/video"
-        style="left: 0; position: absolute; top: 0"
-        width="100%"
-      ></iframe>
-    </div>
+<ion-content> </ion-content>
+<div class="navbar">
+  <div class="home" [routerLink]="['/landing']">
+    <img src="assets/icon/navbar/home.png" />Home
   </div>
-  <h3>UNDER CONSTRUCTION!!</h3>
-</ion-content>
+
+  <div class="jobs" [routerLink]="['/jobs']">
+    <img src="assets/icon/navbar/jobs.png" />Jobs
+  </div>
+  <div class="alumni" [routerLink]="['/alumni-tab']">
+    <img src="assets/icon/navbar/alumni.png" />Alumni
+  </div>
+  <div class="profile" [routerLink]="['/profile']">
+    <img src="assets/icon/navbar/profile.png" />Profile
+  </div>
+</div>
