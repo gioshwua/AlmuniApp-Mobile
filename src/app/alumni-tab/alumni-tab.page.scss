@@ -69,6 +69,7 @@
   color: black;
   background-color: #d9d9d9;
   height: 150px;
+  border-radius: 10px;
 }
 
 .infos > div > p {
@@ -83,10 +84,12 @@
   width: 85px;
   height: 120px;
   background-color: white;
+  border-radius: 5px;
 }
 .alumnis {
   margin: 12px;
 }
+
 .socials > img {
   filter: invert(100%);
   padding: 5px;
