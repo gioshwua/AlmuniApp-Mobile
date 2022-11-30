@@ -31,11 +31,14 @@
 .content {
   display: flex;
   justify-content: space-between;
+  height: 95%;
+  align-items: flex-end;
 }
+
 .news {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-top: 460px;
+
   border: 0px solid;
   height: 90px;
   width: 140px;
@@ -51,7 +54,7 @@
   justify-content: center;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin-top: 460px;
+
   border: 0px solid;
   height: 90px;
   width: 140px;
