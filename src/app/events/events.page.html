@@ -1,8 +1,21 @@
 <ion-content>
-  <ion-button id="click-trigger">Left-Click Me</ion-button>
-  <ion-popover trigger="click-trigger" triggerAction="click">
-    <ng-template>
-      <ion-content class="ion-padding">Hello World!</ion-content>
-    </ng-template>
-  </ion-popover>
+  <div class="main-con">
+    <img src="/assets/construction/under-construction.png" />
+    <h3>THIS SECTION IS <br />UNDER CONSTRUCTION</h3>
+  </div>
 </ion-content>
+<div class="navbar">
+  <div class="home" [routerLink]="['/landing']">
+    <img src="assets/icon/navbar/home.png" />Home
+  </div>
+
+  <div class="jobs" [routerLink]="['/jobs']">
+    <img src="assets/icon/navbar/jobs.png" />Jobs
+  </div>
+  <div class="alumni" [routerLink]="['/alumni-tab']">
+    <img src="assets/icon/navbar/alumni.png" />Alumni
+  </div>
+  <div class="profile" [routerLink]="['/profile']">
+    <img src="assets/icon/navbar/profile.png" />Profile
+  </div>
+</div>

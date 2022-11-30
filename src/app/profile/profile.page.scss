@@ -33,3 +33,12 @@
 .navbar > .profile > img {
   filter: opacity(100%);
 }
+.main-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  flex-direction: column;
+  letter-spacing: -1px;
+  text-align: center;
+}
