@@ -12,7 +12,10 @@
         <div class="label">
           <label> USERNAME</label>
           <ion-item>
-            <ion-input [(ngModel)]="username" placeholder="Kenneth Joshua Reano"></ion-input>
+            <ion-input
+              [(ngModel)]="username"
+              placeholder="Kenneth Joshua Reano"
+            ></ion-input>
             <ion-label><img src="assets/icon/login/login.png" /></ion-label>
           </ion-item>
         </div>
@@ -25,7 +28,9 @@
           </ion-item>
         </div>
         <div class="buttons">
-          <ion-button (click)="login()" [routerLink]="['/landing']">LOGIN</ion-button>
+          <ion-button (click)="login()" [routerLink]="['/landing']"
+            >LOGIN</ion-button
+          >
           <div class="signup">
             <p>Don't have an account?</p>
             <ion-button [routerLink]="['/register']">SIGN UP</ion-button>

@@ -42,31 +42,33 @@ const routes: Routes = [
   },
   {
     path: 'register1',
-    loadChildren: () => import('./register1/register1.module').then( m => m.Register1PageModule)
+    loadChildren: () =>
+      import('./register1/register1.module').then((m) => m.Register1PageModule),
   },
   {
     path: 'register2',
-    loadChildren: () => import('./register2/register2.module').then( m => m.Register2PageModule)
+    loadChildren: () =>
+      import('./register2/register2.module').then((m) => m.Register2PageModule),
   },
   {
     path: 'register3',
-    loadChildren: () => import('./register3/register3.module').then( m => m.Register3PageModule)
+    loadChildren: () =>
+      import('./register3/register3.module').then((m) => m.Register3PageModule),
   },
   {
     path: 'jobs',
-    loadChildren: () => import('./jobs/jobs.module').then( m => m.JobsPageModule)
+    loadChildren: () =>
+      import('./jobs/jobs.module').then((m) => m.JobsPageModule),
   },
   {
     path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+    loadChildren: () =>
+      import('./profile/profile.module').then((m) => m.ProfilePageModule),
   },
   {
     path: 'sendmail',
-    loadChildren: () => import('./sendmail/sendmail.module').then( m => m.SendmailPageModule)
-  },
-  {
-    path: 'testing',
-    loadChildren: () => import('./testing/testing.module').then( m => m.TestingPageModule)
+    loadChildren: () =>
+      import('./sendmail/sendmail.module').then((m) => m.SendmailPageModule),
   },
 ];
 
