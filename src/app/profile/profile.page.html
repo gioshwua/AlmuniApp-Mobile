@@ -9,13 +9,13 @@
     <img src="assets/icon/navbar/home.png" />Home
   </div>
 
-  <div class="jobs" [routerLink]="['/jobs']" (click)="ngOnInit()">
+  <div class="jobs" [routerLink]="['/jobs']" (click)="showLoading()">
     <img src="assets/icon/navbar/jobs.png" />Jobs
   </div>
-  <div class="alumni" [routerLink]="['/alumni-tab']" (click)="ngOnInit()">
+  <div class="alumni" [routerLink]="['/alumni-tab']" (click)="showLoading()">
     <img src="assets/icon/navbar/alumni.png" />Alumni
   </div>
-  <div class="profile" [routerLink]="['/profile']" (click)="ngOnInit()">
+  <div class="profile" [routerLink]="['/profile']">
     <img src="assets/icon/navbar/profile.png" />Profile
   </div>
 </div>
