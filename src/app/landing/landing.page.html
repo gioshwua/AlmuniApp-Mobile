@@ -9,27 +9,32 @@
 <ion-content>
   <div class="main-con">
     <div class="content">
-      <div class="news" [routerLink]="['/news']">
+      <div class="news" [routerLink]="['/news']" (click)="ngOnInit()">
         <img src="assets/icon/alumni/news.png" />News
       </div>
-      <div class="events" [routerLink]="['/events']">
+      <div
+        class="events"
+        [routerLink]="['/events']"
+        (click)="ngOnInit()"
+        (click)="ngOnInit()"
+      >
         <img src="assets/icon/alumni/events.png" />Events
       </div>
     </div>
   </div>
 </ion-content>
 <div class="navbar">
-  <div class="home" [routerLink]="['/landing']">
+  <div class="home" [routerLink]="['/landing']" (click)="ngOnInit()">
     <img src="assets/icon/navbar/home.png" />Home
   </div>
 
-  <div class="jobs" [routerLink]="['/jobs']">
+  <div class="jobs" [routerLink]="['/jobs']" (click)="ngOnInit()">
     <img src="assets/icon/navbar/jobs.png" />Jobs
   </div>
-  <div class="alumni" [routerLink]="['/alumni-tab']">
+  <div class="alumni" [routerLink]="['/alumni-tab']" (click)="ngOnInit()">
     <img src="assets/icon/navbar/alumni.png" />Alumni
   </div>
-  <div class="profile" [routerLink]="['/profile']">
+  <div class="profile" [routerLink]="['/profile']" (click)="ngOnInit()">
     <img src="assets/icon/navbar/profile.png" />Profile
   </div>
 </div>
