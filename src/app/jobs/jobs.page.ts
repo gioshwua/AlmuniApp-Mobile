@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-
+import { LoadingController } from '@ionic/angular';
 @Component({
   selector: 'app-jobs',
   templateUrl: './jobs.page.html',
   styleUrls: ['./jobs.page.scss'],
 })
-export class JobsPage implements OnInit {
+export class JobsPage {
   page = 0;
   perPage = 5;
   array: any[] = [
@@ -102,7 +102,7 @@ export class JobsPage implements OnInit {
   ];
   lists: any[] = [];
 
-  constructor() {}
+  constructor(private loadingCtrl: LoadingController) {}
 
   ngOnInit(): void {
     this.lists = this.paginateArray();
@@ -129,5 +129,14 @@ export class JobsPage implements OnInit {
         event.target.disabled = true;
       }
     }, 1000);
+  }
+  async showLoading() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Retrieving Data...',
+      duration: 2000,
+      spinner: 'circles',
+    });
+
+    loading.present();
   }
 }
