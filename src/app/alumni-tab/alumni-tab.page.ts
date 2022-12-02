@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RequestlibService } from '../Services/requestlib.service';
-
+import { LoadingController } from '@ionic/angular';
 @Component({
   selector: 'app-alumni-tab',
   templateUrl: './alumni-tab.page.html',
   styleUrls: ['./alumni-tab.page.scss'],
 })
-export class AlumniTabPage implements OnInit {
+export class AlumniTabPage {
   page = 0;
   perPage = 5;
   array: any[] = [
@@ -103,7 +103,10 @@ export class AlumniTabPage implements OnInit {
   ];
   lists: any[] = [];
 
-  constructor(private requestlib: RequestlibService) { }
+  constructor(
+    private requestlib: RequestlibService,
+    private loadingCtrl: LoadingController
+  ) {}
 
   ngOnInit(): void {
     this.lists = this.paginateArray();
@@ -130,5 +133,14 @@ export class AlumniTabPage implements OnInit {
         event.target.disabled = true;
       }
     }, 1000);
+  }
+  async showLoading() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Retrieving Data...',
+      duration: 2000,
+      spinner: 'circles',
+    });
+
+    loading.present();
   }
 }
