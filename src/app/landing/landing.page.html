@@ -9,7 +9,7 @@
 <ion-content>
   <div class="main-con">
     <div class="content">
-      <div class="news" [routerLink]="['/news']" (click)="showLoading()">
+      <div class="news" [routerLink]="['/news']">
         <img src="assets/icon/alumni/news.png" />News
       </div>
       <div class="events" [routerLink]="['/events']">
@@ -23,10 +23,10 @@
     <img src="assets/icon/navbar/home.png" />Home
   </div>
 
-  <div class="jobs" [routerLink]="['/jobs']">
+  <div class="jobs" [routerLink]="['/jobs']" (click)="showLoading()">
     <img src="assets/icon/navbar/jobs.png" />Jobs
   </div>
-  <div class="alumni" [routerLink]="['/alumni-tab']">
+  <div class="alumni" [routerLink]="['/alumni-tab']" (click)="showLoading()">
     <img src="assets/icon/navbar/alumni.png" />Alumni
   </div>
   <div class="profile" [routerLink]="['/profile']">

@@ -11,8 +11,8 @@ export class LandingPage {
 
   async showLoading() {
     const loading = await this.loadingCtrl.create({
-      message: 'Please wait..',
-      duration: 1000,
+      message: 'Retrieving Data...',
+      duration: 2000,
       spinner: 'circles',
     });
 
