@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 
 @Component({
@@ -6,10 +6,10 @@ import { LoadingController } from '@ionic/angular';
   templateUrl: './landing.page.html',
   styleUrls: ['./landing.page.scss'],
 })
-export class LandingPage implements OnInit {
+export class LandingPage {
   constructor(private loadingCtrl: LoadingController) {}
 
-  async ngOnInit() {
+  async showLoading() {
     const loading = await this.loadingCtrl.create({
       message: 'Please wait..',
       duration: 1000,
