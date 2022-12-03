@@ -2,8 +2,7 @@
 
 This Project is the mobile version of [this](https://github.com/hubymeme22/alumni-app-project)  web application
 
-## Getting Started
-
+## Setting Up The Application
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`
 * Clone this repository: `git clone https://github.com/gioshwua/AlmuniApp-Mobile.git`.
