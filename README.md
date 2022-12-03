@@ -1,6 +1,6 @@
 # BSU Alumni App Mobile
 
-Alumni App Mobile is the mobile version of [this](https://github.com/hubymeme22/alumni-app-project)  web application that displays the credentials and accomplishments of Batangas State University graduates, it also keeps track of approaching news and events that the university would be hosting. This application also has a 'Job' section for the BSU alumnis job seekers
+Alumni App Mobile is the mobile version of [this](https://github.com/hubymeme22/alumni-app-project)  web application that displays the credentials and accomplishments of Batangas State University graduates, it also keeps track of approaching News and Events that the university would be hosting. This application also includes a job section that gives graduates to potential employment prospects offered by Batangas State University.
 
 ## Setting Up The Application
 * [Download the installer](https://nodejs.org/) for Node LTS.
@@ -10,4 +10,3 @@ Alumni App Mobile is the mobile version of [this](https://github.com/hubymeme22/
 * Run `ionic serve` in a terminal from the project root.
 
 
-the credentials and accomplishments of Batangas State University graduates,
